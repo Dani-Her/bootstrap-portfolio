@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+
+:root {
+    --body: #b6cbce;
+    --heading: #eef3db;
+    --base: #033f47;
+    --base-2: #022a30;
+    --brand: #e0f780;
+    --brand-2: #deff58;
+    --sidebar-width: 240px;
+    --font-base: "Source Sans Pro"
+}
+
+body {
+    background-color: var(--base-2);
+    color: var(--body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading);
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: var(--body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+img {
+    width: 100%;
+}
+
+/* navbar */
+.navbar .nav-link {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--brand);
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.9), rgba(3, 63, 71, 0.9)), url(../images/sidebar-img.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid var(--brand);
+    }
+}
