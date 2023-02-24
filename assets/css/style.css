@@ -142,6 +142,9 @@ img {
 
 .card-custom .card-custom-image img {
     transition: all 0.4s ease;
+    width: 135%;
+    height: 25vw;
+    object-fit: cover;
 }
 
 .card-custom:hover .card-custom-image img {
