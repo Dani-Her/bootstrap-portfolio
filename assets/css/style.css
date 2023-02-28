@@ -157,3 +157,19 @@ img {
     text-align: center;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
+
+/* social icons */
+
+.social-icons {
+
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--base);
+    border-radius: 100px;
+}
